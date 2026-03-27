@@ -46,6 +46,17 @@ Grad-CAM heatmaps highlight the regions of the MRI scan that most influenced the
 - **Task:** Binary classification (`yes` = tumor = 1, `no` = no tumor = 0)
 - **Format:** JPEG images of varying sizes, preprocessed to 224×224
 
+## 📚 Dataset Attribution
+
+**Brain MRI Images for Brain Tumor Detection**  
+- **Source:** Kaggle — Navoneel Chakrabarty  
+- **Link:** https://www.kaggle.com/datasets/navoneel/brain-mri-images-for-brain-tumor-detection  
+- **Size:** 3,000 MRI images (1,500 tumor / 1,500 no-tumor)  
+- **License:** Public dataset, freely available on Kaggle  
+
+> Dataset was provided as part of the Image Processing course  
+> at EPITA Paris (MSc AI Systems, Semester 3).
+
 ---
 
 ## 🏗️ Pipeline Architecture
@@ -179,16 +190,6 @@ The Grad-CAM overlays provide visual justification for each prediction, supporti
 
 ---
 
-## 🔮 Future Improvements
-
-- [ ] Add FastAPI inference endpoint (`POST /predict` with MRI image input)
-- [ ] Add MLflow experiment tracking
-- [ ] Fine-tune with EfficientNet / Vision Transformer (ViT)
-- [ ] Extend to multi-class tumor type classification
-- [ ] Dockerize for reproducible deployment
-
----
-
 ## 👩‍💻 Author
 
 **Gayathri Pamuluru**  
@@ -198,6 +199,4 @@ MSc in Artificial Intelligence Systems — EPITA Paris
 
 ---
 
-## 📄 License
 
-This project is open-source and available under the [MIT License](LICENSE).
